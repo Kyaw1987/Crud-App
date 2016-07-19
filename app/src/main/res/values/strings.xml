@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">CRUD App</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--Label-->
+
+    <string name="fn">First Name</string>
+    <string name="ln">Last Name</string>
+    <string name="pn">Phone Number</string>
+    <string name="ea">Email Address</string>
+    <string name="ha">Home Address</string>
+
+    <!--App Title-->
+    <string name="title">Contacts</string>
+    <string name="add">Add Contact</string>
+    <string name="edit_title">Edit Contact</string>
+
+
+    <!--Button-->
+    <string name="ab">Add Contact</string>
+    <string name="sd">Save</string>
+    <string name="eb">Update</string>
+    <string name="db">Delete</string>
+
+</resources>

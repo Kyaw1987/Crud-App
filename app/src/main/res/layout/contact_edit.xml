@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableRow
+        android:id="@+id/tR1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tV1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/marginLeft_5dp"
+            android:text="@string/edit_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"></TextView>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tR2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopHigh_5dp">
+
+        <TextView
+            android:id="@+id/fN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/marginLeft_5dp"
+            android:text="@string/fn"
+            android:textColor="#424242"
+            android:textSize="17sp"></TextView>
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="14"
+            android:inputType="textPersonName"
+            android:padding="@dimen/marginLeft_5dp">
+
+            <requestFocus />
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tR3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop_5dp">
+
+        <TextView
+            android:id="@+id/lN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/marginLeft_5dp"
+            android:text="@string/ln"
+            android:textColor="#424242"
+            android:textSize="17sp"></TextView>
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="14"
+            android:inputType="textPersonName"
+            android:padding="@dimen/marginLeft_5dp">
+
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tR4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop_5dp">
+
+        <TextView
+            android:id="@+id/pN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/marginLeft_5dp"
+            android:text="@string/pn"
+            android:textColor="#424242"
+            android:textSize="15sp"></TextView>
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="12"
+            android:inputType="phone"
+            android:padding="@dimen/marginLeft_5dp">
+
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tR5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop_5dp">
+
+        <TextView
+            android:id="@+id/eA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/marginLeft_5dp"
+            android:text="@string/ea"
+            android:textColor="#424242"
+            android:textSize="15sp"></TextView>
+
+        <EditText
+            android:id="@+id/emailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="12"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/marginLeft_5dp">
+
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tR6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop_5dp"
+        android:layout_marginBottom="@dimen/bottom">
+
+        <TextView
+            android:id="@+id/hA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/marginLeft_5dp"
+            android:text="@string/ha"
+            android:textColor="#424242"
+            android:textSize="15sp"></TextView>
+
+        <EditText
+            android:id="@+id/homeAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="12"
+            android:inputType="text|textPostalAddress"
+            android:padding="@dimen/marginLeft_5dp">
+
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tR7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop_5dp"
+        >
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="@dimen/autoFixSize"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginLeft_5dp"
+            android:layout_weight="1"
+            android:background="#BDBDBD"
+            android:onClick="editContact"
+            android:text="@string/eb"
+            android:textAppearance="?android:attr/textAppearance"></Button>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="@dimen/autoFixSize"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginLeft_5dp"
+            android:layout_marginRight="@dimen/marginLeft_5dp"
+            android:layout_weight="1"
+            android:background="#BDBDBD"
+            android:onClick="deleteContact"
+            android:text="@string/db"
+            android:textAppearance="?android:attr/textAppearance"></Button>
+    </TableRow>
+</TableLayout>
